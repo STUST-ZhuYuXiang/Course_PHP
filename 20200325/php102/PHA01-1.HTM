@@ -1,0 +1,116 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>手機使用意見調查表</title>
+  <style type="text/css">
+    <!--
+    body {
+      background-color: #33FFFF;
+    }
+
+    .style1 {
+      color: #0000FF;
+      font-family: "標楷體";
+      font-size: x-large;
+      font-weight: bold;
+    }
+
+    .style5 {
+      font-size: 18px
+    }
+
+    .style6 {
+      color: #0000FF;
+      font-family: "標楷體";
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .style7 {
+      color: #FF0000
+    }
+    -->
+  </style>
+</head>
+
+<body>
+  <p align="left" class="style6">手機使用意見調查表</p>
+  <hr />
+  <form id="form1" name="form1" method="post" action="">
+    <table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <th width="32%" align="left" scope="row"><span class="style5">姓 名 ：<span class="style7"> (必填)</span></span></th>
+        <th width="68%" align="left" scope="row"><input type="text" name="name"/></th>
+      </tr>
+      <tr>
+        <th align="left" scope="row"><span class="style5">性 別：</span></th>
+        <th align="left" scope="row">
+          <span class="style5">
+            <input type="radio" name="sex" value="先生" />男
+            <input type="radio" name="sex" value="小姐" />女
+          </span>
+        </th>
+      </tr>
+      <tr>
+        <th align="left" scope="row"><span class="style5">E-Mail：<span class="style7">(必填)</span>
+          </span></th>
+        <th align="left" scope="row"><input type="text" name="email" /></th>
+      </tr>
+      <tr>
+        <th align="left" scope="row"><span class="style5">年 齡：</span></th>
+        <th align="left" scope="row">
+          <span class="style5">
+            <input type="radio" name="age" value="未滿20歲" /> 未滿20歲
+            <input type="radio" name="age" value="20~29歲" /> 20~29歲
+            <input type="radio" name="age" value="30~39歲" /> 30~39歲
+            <input type="radio" name="age" value="40~49歲" /> 40~49歲
+            <input type="radio" name="age" value="50歲以上" /> 50歲以上
+          </span>
+        </th>
+      </tr>
+      <tr>
+        <th align="left" scope="row"><span class="style5">您曾使用過的手機廠牌：</span></th>
+        <th align="left" scope="row">
+          <input type="checkbox" name="phone[]" value="NOKIA"/> NOKIA
+          <input type="checkbox" name="phone[]" value="MOTOROLA"/> MOTOROLA
+          <input type="checkbox" name="phone[]" value="BenQ"/> BenQ
+          <input type="checkbox" name="phone[]" value="Sony Erisson"/> Sony Ericsson
+          <input type="checkbox" name="phone[]" value="OKWAP"/> OKWAP
+        </th>
+      </tr>
+      <tr>
+        <th align="left" scope="row"><span class="style5">您使用手機最常碰到的問題？</span></th>
+        <th align="left" scope="row"><textarea name="trouble" cols="45" rows="5"></textarea></th>
+      </tr>
+      <tr>
+        <th align="left" scope="row"><span class="style5">您目前主要使用哪家業者的門號：</span></th>
+        <th align="left" scope="row">
+          <select name="company">
+            <option value="中華電信" selected>中華電信</option>
+            <option value="台灣大哥大">台灣大哥大</option>
+            <option value="遠傳">遠傳</option>
+            <option value="和信">和信</option>
+            <option value="泛亞">泛亞</option>
+            <option value="其他">其他</option>
+          </select>
+        </th>
+      </tr>
+      <tr>
+        <th scope="row"><span class="style5"></span></th>
+        <th scope="row">&nbsp;</th>
+      </tr>
+      <tr>
+        <th colspan="2" scope="row"><input type="submit" name="Submit" value="送出" />
+        <input type="reset" name="Submit2" value="重設" /></th>
+      </tr>
+    </table>
+  </form>
+  <hr />
+  <p align="center" class="style1">&nbsp;</p>
+  <p>&nbsp; </p>
+</body>
+
+</html>
