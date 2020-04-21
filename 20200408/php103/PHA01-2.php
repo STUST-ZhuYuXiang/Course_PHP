@@ -1,6 +1,6 @@
 <?PHP
-	//定義：order[i][0]~[3]分別為勾選、數量、名稱、價錢
-	$order = $_POST["order"];
+  //定義：order[i][0]~[3]分別為勾選、數量、名稱、價錢
+  $order = $_POST["order"];
 ?>
 
 <head>
@@ -48,23 +48,21 @@
 				總計：<?php echo $total; ?>
 	</table>
 
+
 	<?PHP
 
 	?>
-				
 	<p>
 		<input name="Submit" type="submit" onClick="window.history.back();" value="抱歉！您尚未點餐！返回">
 	</p>
-				
 	<?PHP
 
 	?>
-				
 	<H2>祝您用餐愉快～</h2>
-				
 	<?php
 
 	?>
 
 </body>
+
 </html>
