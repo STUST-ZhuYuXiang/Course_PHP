@@ -1,5 +1,6 @@
 <?PHP
-	$order = $_POST["order"];
+  //定義：order[i][0]~[3]分別為勾選、數量、名稱、價錢
+  $order = $_POST["order"];
 ?>
 
 <head>
@@ -33,20 +34,20 @@
 			<th>數量
 			<th>單價
 			<th>小計
-				<!--將產品資訊列出來-->
 				<?php
-					$total = 0;
-					foreach ($order as $i) {
-						if ($i[1]!=0) {
-							echo "<tr><td>".$i[2]."<td>".$i[1]."<td>".$i[3]."<td>".$i[1]*$i[3];
+          $total = 0;
+          foreach ($order as $i) {
+            if ($i[1] != 0) {
+							echo "<tr><td>".$i[2]."</td><td>".$i[1]."</td><td>".$i[3]."</td><td>".$i[1]*$i[3]."</td></tr>";
 							$total += $i[1]*$i[3];
-						}
-					}
+            }
+          }
 				?>
 		<tr>
 			<td colspan="4" align="right">
 				總計：<?php echo $total; ?>
 	</table>
+
 
 	<?PHP
 
