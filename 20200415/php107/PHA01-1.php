@@ -67,11 +67,13 @@
 			else
 				$sex = "小姐";
 			
+			// 檢查信箱格式
 			if (preg_match("/\S+@\S+\.tw/", $email))
 				echo "correct";
 			else 
 				echo "<FONT SIZE='4' COLOR='#FF0000'>您的email格式不正確，請詳讀入會規則......</FONT>";
 			
+			// 讀取使用者職業選項
 			$jobs = $job[0];
 			for ($i=1; $i<count($job); $i++) {
 				$jobs .= "," . $job[$i];
