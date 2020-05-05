@@ -1,6 +1,6 @@
 <?PHP
-  //定義：order[i][0]~[3]分別為勾選、數量、名稱、價錢
-  $order = $_POST["order"];
+	//定義：order[i][0]~[3]分別為勾選、數量、名稱、價錢
+	$order = $_POST["order"];
 ?>
 
 <head>
