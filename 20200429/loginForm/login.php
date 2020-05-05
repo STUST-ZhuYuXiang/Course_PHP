@@ -3,9 +3,9 @@
 		if ($_POST["btn"] == "login") {
 			// 連結資料庫
 			try {
-    		$pdo = new PDO("mysql:host=localhost;dbname=myuser;", "root", "admin");
-  		} catch (PDOException $err) {
-    		die("資料庫無法連接");
+				$pdo = new PDO("mysql:host=localhost;dbname=myuser;", "root", "admin");
+			} catch (PDOException $err) {
+				die("資料庫無法連接");
 			}
 			
 			// 查詢資料表內容
