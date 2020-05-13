@@ -14,9 +14,9 @@
 	<?php
 		//使用者按下登入後檢查電子郵件與密碼是否空白，如果是請顯示 Email與密碼不可空白，否則將Email導入menu.php
 
-use Symfony\Component\VarExporter\Internal\Values;
+		use Symfony\Component\VarExporter\Internal\Values;
 
-$errmsg = "";
+		$errmsg = "";
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$email = $_POST["email"];
 			$password = $_POST["password"];
